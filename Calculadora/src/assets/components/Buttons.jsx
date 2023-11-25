@@ -1,4 +1,6 @@
-export default function Button({number,blue, style}){
+import { Trash } from "@phosphor-icons/react";
+
+export default function Button({number,blue, style,icon}){
     
     return(
         
@@ -7,6 +9,7 @@ export default function Button({number,blue, style}){
                 style={style}
             > 
                 {number}
+                {icon}
             </button>
     )
 }
