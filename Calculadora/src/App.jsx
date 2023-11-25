@@ -53,3 +53,5 @@ function App() {
 }
 
 export default App
+
+//Criar uma array para guadar e mostrar os valores regars com eval

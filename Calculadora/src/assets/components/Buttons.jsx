@@ -1,7 +1,7 @@
 import { Trash } from "@phosphor-icons/react";
 
 export default function Button({number,blue, style,icon,onclick}){
-    
+
     return(
         
             <button 
