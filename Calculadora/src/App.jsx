@@ -22,13 +22,13 @@ function App() {
   return (
     <main className='flex h-screen w-screen justify-center items-center  bg-blue-800'>
       <div className='flex flex-col   bg-zinc-800 w-1/2 max-w-sm  '>
-        <div className={`py-6 px-8 w-full  text-2xl text-slate-400 text-right     bg-zinc-800  `} >
-          {val.toString()}
+        <div className={`py-6 px-8 w-full  text-5xl text-slate-400 text-right     bg-zinc-800  `} >
+          {val}
         </div>
         <div className="grid grid-cols-3 p-6 justify-items-center gap-4 ">
 
 
-          <Button icon={','} />
+          <Button icon={','} onclick={setval} />
           <Button icon={<Eraser color='#' />} style={style2} />
           <Button icon={<Trash />} style={style1} />
           <Button number={0} onclick={setval} />
