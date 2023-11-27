@@ -18,6 +18,11 @@ function App() {
   // exemplo de prps muito diferentes
 
   const [val, setval] = useState('')
+
+  function Conta ()  {
+    
+  }
+
 useEffect(()=> {
 console.log(val)
 },[val])
@@ -26,6 +31,7 @@ console.log(val)
       <div className='flex flex-col   bg-zinc-800 w-1/2  rounded-xl max-w-sm  '>
         <div className={`py-6 px-8 w-full  text-5xl text-slate-400 break-words text-right `} >
           {val}
+          
         </div>
         <div className="grid grid-cols-3 p-6 justify-items-center  gap-4 ">
 
@@ -41,10 +47,10 @@ console.log(val)
           <Button number={'-'} blue={true} onclick={setval} value={val}/>
           <Button number={4} onclick={setval} value={val} />
           <Button number={5} onclick={setval} value={val} />
-          <Button number={'×'} blue={true} onclick={setval} value={val}/>
+          <Button number={'*'} blue={true} onclick={setval} value={val}/>
           <Button number={6} onclick={setval} value={val} />
           <Button number={7} onclick={setval} value={val} />
-          <Button number={'÷'} blue={true} onclick={setval} value={val}/>
+          <Button number={'/'} blue={true} onclick={setval} value={val}/>
           <Button number={8} onclick={setval} value={val} />
           <Button number={9} onclick={setval} value={val} />
           <Button number={'='} blue={true} onclick={setval} value={val}/>
