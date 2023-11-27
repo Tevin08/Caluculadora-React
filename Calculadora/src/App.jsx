@@ -18,11 +18,11 @@ function App() {
   // exemplo de prps muito diferentes
 
   const [val, setval] = useState('')
-  
+  const [result, setresult] = useState('')
+
   function Conta() {
-    const resultado = eval(val)
-    console.log(resultado);
-      return resultado
+   setresult(eval(val));
+   
   }
 
   useEffect(() => {
@@ -32,10 +32,8 @@ function App() {
     <main className='flex h-screen w-screen justify-center items-center  bg-blue-800'>
       <div className='flex flex-col   bg-zinc-800 w-1/2  rounded-xl max-w-sm  '>
         <div className={`py-6 px-8 w-full  text-5xl text-slate-400 break-words text-right `} >
-if () {
-  
-}
-        {val}
+          {result != null ? val : result } 
+          
         </div>
         <div className="grid grid-cols-3 p-6 justify-items-center  gap-4 ">
 
@@ -57,7 +55,7 @@ if () {
           <Button number={'/'} blue={true} onclick={setval} value={val} />
           <Button number={8} onclick={setval} value={val} />
           <Button number={9} onclick={setval} value={val} />
-          <Button number={'='} blue={true} onclick={Conta}  value={val} />
+          <Button number={'='} blue={true} onclick={Conta} value={val} />
         </div>
       </div>
     </main>
