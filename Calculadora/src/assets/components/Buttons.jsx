@@ -11,8 +11,9 @@ export default function Button({number,blue, style,icon,onclick, value,operator,
                     onclick(`${result}${number}`)
                     onclick(`${value}${number}`)
                 }}     
-            > 
-                {number == "/" ? operator : number}
+            >  
+                {number == "/" || number == '*' ||  number == '.'  ? operator : number}
+                
                 {icon}
             </button>
     )
