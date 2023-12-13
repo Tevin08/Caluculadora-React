@@ -1,7 +1,7 @@
 async function get(){
     console.log("0get")
     const response = await fetch(
-        "http://localhost:3000/historico",
+        "http://localhost:5173/historico",
         {
             method: 'GET',
             mode: 'cors',

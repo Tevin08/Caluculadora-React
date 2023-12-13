@@ -4,6 +4,7 @@ import { DiscordLogo, Eraser, Rocket, Trash } from '@phosphor-icons/react'
 import { YoutubeLogo } from '@phosphor-icons/react/dist/ssr';
 
 function App() {
+  let cont = 0;
   const style1 = {
     backgroundColor: '#D91E36'
   }
@@ -50,7 +51,7 @@ function App() {
       <div className='flex flex-col   bg-zinc-800 w-1/2  rounded-xl max-w-sm  '>
           {/* <span className=' text-right px-6    text-zinc-400' > {val} </span> */}
         <div className={`py-6 px-8 w-full  break-words  text-5xl text-slate-400 text-right `} >
-          {val} 
+          {val == '' ? cont:val} 
           {/* {console.log(result)} */}
         </div>
         <div className="grid grid-cols-3 p-6 justify-items-center  gap-4 ">
