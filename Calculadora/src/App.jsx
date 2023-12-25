@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Button from './assets/components/Buttons';
 import { DiscordLogo, Eraser, Rocket, Trash } from '@phosphor-icons/react'
 import { YoutubeLogo } from '@phosphor-icons/react/dist/ssr';
+import Historial from './assets/historico';
 
 function App() {
   let cont = 0;
@@ -77,6 +78,7 @@ function App() {
           <Button number={"="} onclick={Conta} value={val}  />
         </div>
       </div>
+      <Historial/>
     </main>
   )
 }
